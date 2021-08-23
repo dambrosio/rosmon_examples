@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+import rospy
+
+CYCLE_PERIOD = rospy.Duration(2.0)
+
+
+def node():
+    rospy.init_node('py_logger')
+
+    count = 0
+    while not rospy.is_shutdown():
+        is_even = ((count % 2) == 0)
+        msg = "Example py {0} message for logging purposes".format(['error', 'info'][is_even])
+        if is_even:
+            rospy.loginfo(msg)
+        else:
+            rospy.logerr(msg)
+
+        count += 1
+
+        rospy.sleep(CYCLE_PERIOD)
+
+if __name__ == '__main__':
+    try:
+        node()
+    except rospy.ROSInterruptException:
+        pass

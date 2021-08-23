@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="rosmon_py_cpp_logs" type="cpp_logger" name="cpp_logger"/>
+  <node pkg="rosmon_py_cpp_logs" type="py_logger"  name="py_logger"/>
+</launch>

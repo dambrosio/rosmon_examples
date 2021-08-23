@@ -1,0 +1,19 @@
+<package format="2">
+  <name>rosmon_py_cpp_logs</name>
+  <version>0.0.0</version>
+  <description>Example package to show differences between logging using rosmon in python and cpp nodes</description>
+
+  <maintainer email="dan.ambrosio@gmail.com">Dan Ambrosio</maintainer>
+
+  <license>BSD</license>
+
+  <maintainer email="dan.ambrosio@gmail.com">Dan Ambrosio</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslint</build_depend>
+
+  <depend>roscpp</depend>
+  <depend>roslaunch</depend>
+  <depend>rospy</depend>
+
+</package>
